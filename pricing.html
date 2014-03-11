@@ -1,0 +1,74 @@
+ <!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Savannah Reiff</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="price.js"></script>
+    <style type="text/css"></style>
+    
+</head>
+
+<body>
+     <h1><img src="logo.png" alt="Jet Pack Rentals" width= "100%" height=300px></h1>
+    <div class="navbar">
+        <ul class="navbar">
+            <li>
+                <a href="jetpackhome.html">Home</a>
+            </li>
+            <li>
+                <a href="jetpackabout.html">About</a>
+            </li>
+            <li>
+                <a href="reservations.html">Reservations</a>
+            </li>
+            <li>
+                <a href="locations.html">Locations</a>
+            </li>
+            <li>
+                <a href="pricing.html" class="here">Pricing</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="main">
+    <p>
+        The pricing below is per person. Select the amount of time and number of riders to calculate your total cost.
+        <br>
+        <br>
+        <form action name="rentals">
+        <table border="1" align="center" style="font-size: 20px" id="hour">
+        <tr>
+            <td> <input type="radio" name ="time" value="99"</td>
+            <td>Half Hour Rental</td>
+            <td>$99</td>
+        </tr>
+        <tr>
+            <td> <input type="radio" name ="time" value="175"</td>
+            <td>One Hour Rental</td>
+            <td>$175</td>
+        </tr>
+        </table>
+        <br>
+        <br>
+        <div id="amount" align="center">
+            Number of riders (between 1 and 5): <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <input type="submit" value="Get Price" onclick="showPrices(this.form)">
+        </div>
+        </form>
+    </p>
+    </div>
+
+    <div id="footer">
+        <a href="credits.html">Credits</a>
+    </div>
+    
+</body>
+</html>

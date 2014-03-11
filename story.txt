@@ -1,0 +1,16 @@
+../story/showfile.htm?../index.html index page
+../story/showfile.htm?../jetpacks/contact.html contact page
+../story/showfile.htm?../jetpacks/jetpackabout.html about page
+../story/showfile.htm?../jetpacks/jetpackhome.html home page
+../story/showfile.htm?../jetpacks/locations.html locations page
+../story/showfile.htm?../jetpacks/pricing.html pricing page
+../story/showfile.htm?../jetpacks/reservations.html reservations page
+../story/showfile.htm?../jetpacks/style.css styling
+../story/showfile.htm?../jetpacks/credits.html credits page
+../story/showfile.htm?../jetpacks/price.js JS for the price tool
+../story/showfile.htm?../jetpacks/animate.js JS for the jet pack animation
+../story/showfile.htm?../jetpacks/animation.css CSS for the jet pack animation
+../story/showfile.htm?../jetpacks/reservation.js JS for the jet pack reservation form
+../story/showfile.htm?../jetpacks/registration_source.txt registration.php source
+../story/showfile.htm?../jetpacks/contact_source.txt contact.php source
+../story/showfile.htm?../jetpacks/contact.js JS for the jet pack contact form

@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Savannah Reiff</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.min.js"></script>
+    <script type="text/javascript" src="jquery.form.js"></script>
+    <script type="text/javascript" src="reservation.js"></script>
+    
+</head>
+
+<body>
+     <h1><img src="logo.png" alt="Jet Pack Rentals" width= "100%" height=300px></h1>
+    <div class="navbar">
+        <ul class="navbar">
+            <li>
+                <a href="jetpackhome.html">Home</a>
+            </li>
+            <li>
+                <a href="jetpackabout.html">About</a>
+            </li>
+            <li>
+                <a href="reservations.html"  class="here">Reservations</a>
+            </li>
+            <li>
+                <a href="locations.html">Locations</a>
+            </li>
+            <li>
+                <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+    <p>
+        
+        <form id="userinfo" action="registration.php" method="post" align="center">
+            <table align="center">
+            <tr> Enter your information in the form below:</tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" /></td>
+                <br>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" name="email" /></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="phone" id="phone" name="phone" /></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label for="location">Location:</label></td>
+            <td>
+                <select name="location">
+                <option value="San Diego">San Diego</option>
+                <option value="Santa Monica">Santa Monica</option>
+                <option value="Santa Barbara">Santa Barbara</option>
+                </select>
+            </td>
+            </tr>
+            <br> <br>
+            <tr>
+                <td><label for="time">Time:</label></td>
+            <td>
+                <input type="radio" name="time" value="30 minutes">30 minutes 
+                <input type="radio" name="time" value="60 minutes">60 minutes <br> <br>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="start_time">Start Time:</label></td>
+            <td>
+                <select name="start_time">
+                <option value="10:00am">10:00am</option>
+                <option value="11:00am">11:00am</option>
+                <option value="12:00pm">12:00pm</option>
+                <option value="1:00pm">1:00pm</option>
+                <option value="2:00pm">2:00pm</option>
+                <option value="3:00pm">3:00pm</option>
+            </select>
+            </td>
+            <br> <br>
+            </tr>
+            <tr>
+                <td><label for="date">Date:</label></td>
+            
+                <td>
+                <select name="month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                </select>
+            
+                <input type="number" name="date" min="1" max="31">
+             
+                <select name="year">
+                <option value="2013">2014</option>
+                <option value="2014">2015</option>
+                <option value="2015">2016</option>
+                </select>
+                </td>
+            <br> <br>
+            </tr>
+            <tr>
+                <td><label for="quantity">Number of riders (between 1 and 5):</label></td>
+                <td>
+                <input type="number" name="quantity" min="1" max="5"> <br>
+                </td>
+            <br>
+            <br>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td>
+                <textarea name="comments" rows="3" cols="40"></textarea>
+                </td>
+            <br>
+            </tr>
+            
+            <tr>
+            <td></td>
+            <td>
+            <input type="submit" value="submit" id="submit">
+            </td>
+            </tr>
+            </table>
+        </form>
+        <div id="response"></div>
+    </p>
+    </div>
+    
+    <div id="footer">
+        <a href="credits.html">Credits</a>
+    </div>
+    
+    
+</body>
+</html>
